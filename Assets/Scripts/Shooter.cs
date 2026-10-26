@@ -146,7 +146,7 @@ public class Shooter : MonoBehaviour
                 //Make it negative if the angle was negative 
                 if (_angel < 0) { x *= -1; }
                 //Send it flying 
-                instance.GetComponent<Rigidbody2D>().velocity = new Vector2(x, 0);
+                instance.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(x, 0);
           
                 _button.interactable = false;
                 break;
